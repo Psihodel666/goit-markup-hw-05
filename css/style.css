@@ -87,7 +87,7 @@ ul {
 .navigation-menu li :hover,
 .navigation-menu li :focus {
   color: #2196f3;
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-menu li .current::after {
   content: "";
@@ -127,7 +127,7 @@ ul {
 .header-contact li a:hover,
 .header-contact li a:focus {
   color: #2196f3;
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .top-main {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -326,13 +326,13 @@ ul {
 .wrap-us-team-icon a:hover,
 .wrap-us-team-icon a:focus {
   background-color: #2196f3;
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .wrap-us-team-icon a:hover svg,
 .wrap-us-team-icon a:focus svg {
   fill: #fff;
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------us-clients */
@@ -367,12 +367,12 @@ ul {
 .us-clients-container a:hover,
 .us-clients-container a:focus {
   border-color: #2196f3;
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 .us-clients-container a:hover svg,
 .us-clients-container a:focus svg {
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196f3;
   outline: none;
 }
@@ -412,7 +412,7 @@ ul {
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: #2196f3;
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
 }
 .container-portfolio-card {
@@ -436,7 +436,7 @@ ul {
   width: 370px;
   background: #fff;
   border: 1px solid #eeeeee;
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card a {
   text-decoration: none;
@@ -456,7 +456,7 @@ ul {
   padding: 63px 24px;
   height: 100%;
   transform: translateY(100%);
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card:hover,
 .portfolio-card:focus {
@@ -533,7 +533,7 @@ address ul li:nth-child(1) > a {
 }
 address ul li a:hover,
 address ul li a:focus:focus {
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
 }
 .footer-box-link {
@@ -565,7 +565,7 @@ address ul li a:focus:focus {
 .footer-conteiner-link a:hover,
 .footer-conteiner-link a:focus {
   background-color: #2196f3;
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-conteiner-link svg {
   fill: #fff;
@@ -581,7 +581,8 @@ address ul li a:focus:focus {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop .is-hidden .modal {
-  transform: scale(2);
+  transform: scale(1.5);
+  н
 }
 .modal {
   min-width: 528px;
@@ -594,7 +595,7 @@ address ul li a:focus:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-close {
   position: absolute;

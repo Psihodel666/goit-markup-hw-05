@@ -9,6 +9,9 @@
 * {
   box-sizing: border-box;
 }
+button {
+  cursor: pointer;
+}
 body {
   font-family: "roboto", sans-serif;
 }
@@ -574,9 +577,15 @@ address ul li a:focus:focus {
   position: fixed;
   top: 0;
   left: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.backdrop .is-hidden .modal {
+  transform: scale(1.5);
 }
 .modal {
-  min-width: 518px;
+  min-width: 528px;
   min-height: 581px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -586,4 +595,22 @@ address ul li a:focus:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  transition: 250ms;
+}
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }

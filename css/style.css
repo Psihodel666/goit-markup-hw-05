@@ -82,12 +82,12 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-menu li :hover,
 .navigation-menu li :focus {
   color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-menu li .current::after {
   content: "";
@@ -120,6 +120,7 @@ ul {
   line-height: 1.18;
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact li a svg {
   margin-right: 10px;
@@ -127,7 +128,7 @@ ul {
 .header-contact li a:hover,
 .header-contact li a:focus {
   color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .top-main {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -139,6 +140,8 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /* transform: translate(50%, 50%); */
+  margin: 0 auto;
 }
 .top-main h1 {
   color: var(--main-title-color);
@@ -314,6 +317,7 @@ ul {
 }
 .wrap-us-team-icon svg {
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .wrap-us-team-icon a {
   display: flex;
@@ -322,17 +326,18 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .wrap-us-team-icon a:hover,
 .wrap-us-team-icon a:focus {
   background-color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .wrap-us-team-icon a:hover svg,
 .wrap-us-team-icon a:focus svg {
   fill: #fff;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 /* ------------------us-clients */
@@ -363,22 +368,22 @@ ul {
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .us-clients-container a:hover,
 .us-clients-container a:focus {
   border-color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 .us-clients-container a:hover svg,
 .us-clients-container a:focus svg {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196f3;
   outline: none;
 }
 
 .us-clients-container svg {
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ---------------------portfolio */
 .portfolio-main {
@@ -400,6 +405,7 @@ ul {
   line-height: 1.63;
   letter-spacing: 0.03em;
   text-align: center;
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn {
   display: flex;
@@ -412,7 +418,6 @@ ul {
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
 }
 .container-portfolio-card {
@@ -527,13 +532,13 @@ address ul li a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 address ul li:nth-child(1) > a {
   color: #fff;
 }
 address ul li a:hover,
 address ul li a:focus:focus {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
 }
 .footer-box-link {
@@ -561,11 +566,11 @@ address ul li a:focus:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-conteiner-link a:hover,
 .footer-conteiner-link a:focus {
   background-color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-conteiner-link svg {
   fill: #fff;
